@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chimp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Java.js">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+    <body>
+  
+<style>
+   body{
+      background-image: url("img/fundo.jpg");
+   }
+</style>
+
+<div class="wrapper">
+    <div class="card-switch">
+        <label class="switch">
+           <input type="checkbox" class="toggle">
+          
+           
+           <div class="flip-card__inner">
+              <div class="flip-card__front">
+            
+                 <div class="title"><u>Cadastrar</u></div>
+                 <form class="flip-card__form" action="" method="post">
+                    <input class="card__input" placeholder="Nome" type="name">  <ul><div class="user1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARxJREFUSEvVlNENwjAMRN1NYBOYBJgEmAQ2oZvAJtAnxVIanFxU1A8i5aOJes++2B5s5TWsrG+9gI2Z3cxsZ2avtK/T96gC7AEck3ipBehuZoCqSwGI+JH+viQxsjlMZ3wDObUyUQBsIQMXzyP1zLBpX0tBAZ6TDUS8TdHmOpxzTxbch+sXAILvpFrVUQD85x0ii87pnIfmHRZlkNvgFZM/MqL4Xy1XlQECHmkUIZEDXlym/uOqjaaatXmvLMIeHpldLh8Z+F/t5hoAQZoMa3pWtaMjQD4eWqMAONuzDCsqAnj3Nus7S6ucTbOuLgFd8yXwLK+yWVOWAB9usr4DiFs7G34loDXc1GOHw68EyOElKF//qz5QUcv7/wd8AKJNRBl0Vm5MAAAAAElFTkSuQmCC"/></div></ul>
+                    <input class="card__input" name="email" placeholder="Email" type="email"> <ul><div class="email2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPBJREFUSEvdle0NwjAMRK+bwCYwCTAJMAlsApvAJtBX1dVRKVXSDwnVfyo1jp/v6qSVFo5q4fpaF2An6SZpM9G2t6STpCd13KJH/RLIHAFk2wd82soskDAmUP9qNzbNu4IAUPxer10LCajHhYgkIBIuBZBzvYl8jySAxEhGzX7AMixhMOLb+d4kgAU2Ipfnz1RYi26J54TVgwDqUBzpxxbi38UtYRxRGZENCMjBLMMCOndL+sNQBIiuUIHXHnTdHKZejAKEmjjp3UmdE5B7LEYr+H/AnJddN7p+FzF6zPfUGzV5Xed6XJS3rl9mkfTc5C+tRDwZzXJDRwAAAABJRU5ErkJggg=="/></div></ul>
+                    <input class="card__input" name="password" placeholder="Senha" id="senha" type="password">
+                    <div class="Senha2">
+                        <input type="checkbox" id="mostrarSenha" onchange="toggleSenha()"> <label for="mostrarSenha"></label>
+                    </div>
+                    <div class="remember-forgot">
+                      <a href="entrar.php" >caso você já esteja registrado clique aqui</a>
+                     </div>
+
+
+                   <button class="flip-card__btn">Confirmar!</button>
+                 
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<script>
+function toggleSenha() {
+var senhaInput = document.getElementById('senha');
+
+// Se a caixa de seleção estiver marcada, muda o tipo de entrada para "text"; senão, muda para "password"
+senhaInput.type = document.getElementById('mostrarSenha').checked ? 'text' : 'password';
+}
+
+</script>
+
+                 </form>
+              </div>  
+           </div>
+        </label>
+    </div>   
+</div>
+
+
+</body>
+</html>
